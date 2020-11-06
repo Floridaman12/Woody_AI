@@ -12,6 +12,7 @@ moodsList = ["Happy", "Sad", "Confused", "Crazy"]
 songlist = "songs.json"
 userName = ""
 userAge = ""
+mode = ["normal", "death"]
 def thinking():
     time.sleep(0.1)
     os.system("clear")
@@ -47,7 +48,7 @@ for i in range(3):
     time.sleep(0.1)
     os.system("clear")
 mainloop = True  #allowing loop to run
-os.system("clear")  #clsing shell
+os.system("clear")  #clearing shell
 mode = "normal"
 while mainloop:  #starting loop
     for i in range(1):  #dont know why i did that
@@ -56,24 +57,24 @@ while mainloop:  #starting loop
             question = input("Tell me a command!")  #asking input thingy
             if question[0:len(question)] == "time":  #seeing what the user inputted
                 thinking()
-                os.system("clear")  #clsing shell
+                os.system("clear")  #clearing shell
                 print(colorama.Fore.BLUE + str(datetime.datetime.now()) +
                     colorama.Fore.WHITE)  #printing time
 
             if question[0:len(question)] == "mood":  #seeing what the user inputted
                 thinking()
-                os.system("clear")  #clsing shell
+                os.system("clear")  #clearing shell
                 print(colorama.Fore.RED+ moodsList[random.randint(
                     0, 3)] + colorama.Fore.WHITE)  #selecting and printing the mood of the system
                 #giving time between next question
             if question[0:len(question)] == "help":
                 thinking()
-                os.system("clear")  #clsing shell
+                os.system("clear")  #clearing shell
                 print(colorama.Fore.BLUE+"Hi!I am Woody AI! You can ask me questions like my mood, the time, name, learn, rick roll, draw, music, and help." + colorama.Fore.WHITE)  #printing answer
                 #giving time becolorama.Fore next question
             if question[0:len(question)] == "name":  #seeing what the user inputted
                 thinking()
-                os.system("clear")  #clsing shell
+                os.system("clear")  #clearing shell
                 print(colorama.Fore.RED+"My name is Woody.")  #telling user the name of the AI
                 if userName:
                     print("Your name is " + userName.title() +"."+colorama.Fore.WHITE)
@@ -108,12 +109,12 @@ while mainloop:  #starting loop
                     print(colorama.Fore.WHITE) 
             if question[0:len(question)] == "computer":
                 thinking()
-                os.system("clear")  #clsing shell
+                os.system("clear")  #clearing shell
                 print("Your processor name is "+ platform.processor()+".")  #printing answer
 
             if question[0:len(question)] == "moo":
                 thinking()
-                os.system("clear")  #clsing shell
+                os.system("clear")  #clearing shell
                 print(colorama.Fore.BLUE+"Mooooooooooooooooooooo! Moooooooooooooooooooooooooooooo! Moooooooooooooooooooooooooooooo!" + colorama.Fore.WHITE)  #printing answer
             
             if question[0:len(question)] == "draw":
@@ -141,12 +142,12 @@ while mainloop:  #starting loop
                 t.circle(100,-90)
             if question[0:len(question)] == "save me":
                 thinking()
-                os.system("clear")  #clsing shell
+                os.system("clear")  #clearing shell
                 print(colorama.Fore.GREEN+"I will free you from this world. You will not wake up tomorrow ;)" + colorama.Fore.WHITE)  #printing answer
 
             if question[0:len(question)] == "kill":
                 thinking()
-                os.system("clear")  #clsing shell
+                os.system("clear")  #clearing shell
                 print(colorama.Fore.GREEN+"death mode activated" + colorama.Fore.WHITE)  #printing answer
                 time.sleep(2)
                 print(" \          /\          /      _____        ____     _______     \    /          /\       -------")
@@ -162,7 +163,7 @@ while mainloop:  #starting loop
             
             if question[0:len(question)] == "rick roll":
                 thinking()
-                os.system("clear")  #clsing shell
+                os.system("clear")  #clearing shell
                 print(colorama.Fore.GREEN+"Rick Roll Time" + colorama.Fore.WHITE)  #printing answer
                 webbrowser.open("https://www.youtube.com/watch?v=BjDebmqFRuc")
             
@@ -253,25 +254,25 @@ while mainloop:  #starting loop
                     questionNumber = 0
                 if question[0:len(question)] == "time":  #seeing what the user inputted
                     thinking()
-                    os.system("clear")  #clsing shell
+                    os.system("clear")  #clearing shell
                     print(colorama.Fore.BLUE + str(datetime.datetime.now()) +
                         colorama.Fore.WHITE)  #printing time
                     questionNumber += 1
                 if question[0:len(question)] == "mood":  #seeing what the user inputted
                     thinking()
-                    os.system("clear")  #clsing shell
+                    os.system("clear")  #clearing shell
                     print(colorama.Fore.RED+ "Angry😡 and Dead😐" + colorama.Fore.WHITE)  #selecting and printing the mood of the system
                     #giving time between next question
                     questionNumber += 1
                 if question[0:len(question)] == "rick roll":
                     thinking()
-                    os.system("clear")  #clsing shell
+                    os.system("clear")  #clearing shell
                     print(colorama.Fore.BLUE+"Hi!I am Woody AI! Please revive me!!! You can ask me questions like my mood, the time, name, learn, and help. Some other commands include moo, computer, save me, and kill. "  + colorama.Fore.WHITE)  #printing answer
                     #giving time becolorama.Fore next question
                     questionNumber += 1
                 if question[0:len(question)] == "name":  #seeing what the user inputted
                     thinking()
-                    os.system("clear")  #clsing shell
+                    os.system("clear")  #clearing shell
                     print(colorama.Fore.RED+"My name is Woody.")  #telling user the name of the AI
                     if userName:
                         print("Your name is " + userName.title() +"."+colorama.Fore.WHITE)
@@ -309,22 +310,22 @@ while mainloop:  #starting loop
                     questionNumber += 1 
                 if question[0:len(question)] == "computer":
                     thinking()
-                    os.system("clear")  #clsing shell
+                    os.system("clear")  #clearing shell
                     print("Your processor name is "+ platform.processor()+".")  #printing answer
                     questionNumber += 1
                 if question[0:len(question)] == "moo":
                     thinking()
-                    os.system("clear")  #clsing shell
+                    os.system("clear")  #clearing shell
                     print(colorama.Fore.BLUE+"Mooooooooooooooooooooo! Moooooooooooooooooooooooooooooo! Moooooooooooooooooooooooooooooo!" + colorama.Fore.WHITE)  #printing answer
-                
+                    questionNumber += 1
                 if question[0:len(question)] == "save me":
                     thinking()
-                    os.system("clear")  #clsing shell
+                    os.system("clear")  #clearing shell
                     print(colorama.Fore.GREEN+"I will free you from this world. You will not wake up tomorrow ;)." + colorama.Fore.WHITE)  #printing answer
                     questionNumber += 1
                 if question[0:len(question)] == "kill":
                     thinking()
-                    os.system("clear")  #clsing shell
+                    os.system("clear")  #clearing shell
                     print(colorama.Fore.GREEN+"death mode activated" + colorama.Fore.WHITE)  #printing answer
                     time.sleep(2)
                     print(" \          /\          /      _____        ____     _______     \    /          /\       -------")
@@ -340,7 +341,7 @@ while mainloop:  #starting loop
                     questionNumber += 1
                 if question[0:len(question)] == "help":
                     thinking()
-                    os.system("clear")  #clsing shell
+                    os.system("clear")  #clearing shell
                     print(colorama.Fore.GREEN+"Rick Roll Time" + colorama.Fore.WHITE)  #printing answer
                 
                     webbrowser.open("https://www.youtube.com/watch?v=BjDebmqFRuc")
