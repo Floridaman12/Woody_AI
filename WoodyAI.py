@@ -408,7 +408,7 @@ while mainloop:  #starting loop
                     print("  /   \   ")
                     print(" /     \  ")
                     print("/       \ ")
-            
+                    webbrowser.open("https://www.youtube.com/watch?v=fC7oUOUEEi4")
                 if questionNumber >= 5:
                     print("I don't want to play with you anymore.")
                     mainloop = False
