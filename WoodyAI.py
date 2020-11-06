@@ -10,8 +10,6 @@ import turtle
 os.system("clear")
 moodsList = ["Happy", "Sad", "Confused", "Crazy"]
 songlist = "songs.json"
-mode = "normal"
-
 userName = ""
 userAge = ""
 def thinking():
@@ -246,7 +244,7 @@ while mainloop:  #starting loop
             
             questionNumber = 0
         if mode == "death":
-            while questionNumber <= 10:    
+            while questionNumber <= 5:    
                 question = input("Tell me a command!")  #asking input thingy
                 if question[0:len(question)] == "revive":
                     thinking()
